@@ -16,5 +16,13 @@
   --warning_600: #FB8C00; 
   --error_50: #EEE0E0; 
   --error_300: #E57373; 
-  --error_600: #E53935; 
+  --error_600: #E53935;
+  --white: #FFFFFF;
+  --black: #000000;
+  --body-12: 12px;
+  --body-14: 14px;
+  --body-16: 16px;
+  --body-18: 18px;
+  --h2: 32px;
+  --h1: 40px;
 }
