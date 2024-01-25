@@ -4,7 +4,7 @@ export default {
   title: 'Design System/Atoms/Button',
 }
 
-const Template = ({ label, ...args }) => createButton({ label, args })
+const Template = ({ label, ...args }) => createButton({ label, ...args })
 
 export const Default = Template.bind({})
 
