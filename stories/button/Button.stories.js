@@ -1,3 +1,4 @@
+import { withActions } from '@storybook/addon-actions/decorator'
 import { createButton } from './Button'
 import ButtonDoc from './ButtonDoc.mdx'
 
@@ -11,6 +12,7 @@ export default {
 
       return decorator
     },
+    withActions,
   ],
   parameters: {
     docs: {
@@ -18,6 +20,22 @@ export default {
       description: {
         component: ButtonDoc,
       },
+    },
+    actions: {
+      handles: ['mouseover', 'click .btn'],
+    },
+    backgrounds: {
+      default: 'light',
+      values: [
+        {
+          name: 'light',
+          value: '#FFFFFF',
+        },
+        {
+          name: 'blackfriday',
+          value: '#000000',
+        },
+      ],
     },
   },
   argTypes: {
@@ -37,6 +55,10 @@ export default {
     size: {
       control: 'select',
       options: ['small', 'medium', 'large'],
+    },
+    onClick: {
+      description: 'Event',
+      action: 'clicked',
     },
   },
 }
