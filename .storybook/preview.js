@@ -26,10 +26,10 @@ const preview = {
         date: /Date$/i,
       },
     },
-    viewport: {
-      viewports: customViewports,
-      defaultViewport: 'someDefault',
-    },
+    // viewport: {
+    //   viewports: customViewports,
+    //   defaultViewport: 'someDefault',
+    // },
   },
 }
 
