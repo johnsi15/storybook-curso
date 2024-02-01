@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test-storybook": "test-storybook",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
@@ -19,6 +19,7 @@
     "@storybook/html": "7.6.10",
     "@storybook/html-vite": "7.6.10",
     "@storybook/test": "7.6.10",
+    "@storybook/test-runner": "^0.16.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "storybook": "7.6.10"
