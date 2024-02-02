@@ -1,6 +1,9 @@
 import { withActions } from '@storybook/addon-actions/decorator'
+import { userEvent, within } from '@storybook/testing-library'
+import { expect } from '@storybook/test'
 import { createButton } from './Button'
 import ButtonDoc from './ButtonDoc.mdx'
+import { expect } from '@storybook/test'
 
 export default {
   title: 'Design System/Atoms/Button',
@@ -69,4 +72,11 @@ export const Default = Template.bind({})
 
 Default.args = {
   label: 'Button',
+}
+
+Default.play = async ({ args, canvasElement }) => {
+  const canvas = within(canvasElement)
+
+  await userEvent.click(canvas.getByRole('button'))
+  await expect(canvas.getByText('Button')).toBeInTheDocument()
 }
