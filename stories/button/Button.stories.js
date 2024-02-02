@@ -1,6 +1,5 @@
 import { withActions } from '@storybook/addon-actions/decorator'
 import { userEvent, within } from '@storybook/testing-library'
-import { expect } from '@storybook/test'
 
 import { createButton } from './Button'
 import ButtonDoc from './ButtonDoc.mdx'
