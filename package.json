@@ -12,6 +12,7 @@
   "author": "John Serrano",
   "license": "MIT",
   "devDependencies": {
+    "@storybook/addon-a11y": "^7.6.13",
     "@storybook/addon-essentials": "7.6.10",
     "@storybook/addon-interactions": "7.6.10",
     "@storybook/addon-links": "7.6.10",
