@@ -6,10 +6,13 @@
   "scripts": {
     "test-storybook": "test-storybook",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=chpt_b5b04d706fdbaf0"
   },
   "keywords": [],
-  "author": "John Serrano",
+  "author": {
+    "name": "John Serrano"
+  },
   "license": "MIT",
   "devDependencies": {
     "@storybook/addon-a11y": "^7.6.13",
@@ -22,6 +25,7 @@
     "@storybook/test": "7.6.10",
     "@storybook/test-runner": "^0.16.0",
     "@storybook/testing-library": "^0.2.2",
+    "chromatic": "^10.9.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "storybook": "7.6.10"
